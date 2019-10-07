@@ -7,6 +7,7 @@ jobs:
   run_build:
     executor: docker_netcore
     steps:
+      - checkout
       - run:
           name: check dotnet version
           command: dotnet --version
