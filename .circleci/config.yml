@@ -8,12 +8,16 @@ jobs:
     executor: docker_netcore
     steps:
       - checkout
-      # - run:
-      #     name: check dotnet version
-      #     command: dotnet --version
-      # - run:
-      #     name: run dotnet sample app
-      #     command: dotnet run
+      - run:
+          name: check dotnet version
+          command: dotnet --version
+      - run:
+          name: run dotnet sample app
+          command: dotnet run
+  deploy:
+    executor: docker_netcore
+    steps:
+      - checkout
       - run:
           name: There's nothing in dotnet image; Install one by one
           command: |
@@ -27,13 +31,13 @@ jobs:
           command: |
             export PATH=~/.local/bin:$PATH
             aws --version
-  # deploy:
-  #   executor: docker_netcore
-  #   steps:
-  #     - checkout
-  #     - run:
-  #         name: Install awscli
-  #         command:    
+  test:
+    executor: docker_netcore
+    steps:
+      - checkout
+      - run:
+          name: is this same instance with deploy?
+          command: aws --version
 
 workflows:
   version: 2
