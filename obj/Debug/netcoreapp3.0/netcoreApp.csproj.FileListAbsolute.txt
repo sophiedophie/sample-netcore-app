@@ -1,0 +1,11 @@
+/Users/sophie/Dev/netcoreApp/bin/Debug/netcoreapp3.0/netcoreApp
+/Users/sophie/Dev/netcoreApp/bin/Debug/netcoreapp3.0/netcoreApp.deps.json
+/Users/sophie/Dev/netcoreApp/bin/Debug/netcoreapp3.0/netcoreApp.runtimeconfig.json
+/Users/sophie/Dev/netcoreApp/bin/Debug/netcoreapp3.0/netcoreApp.runtimeconfig.dev.json
+/Users/sophie/Dev/netcoreApp/bin/Debug/netcoreapp3.0/netcoreApp.dll
+/Users/sophie/Dev/netcoreApp/bin/Debug/netcoreapp3.0/netcoreApp.pdb
+/Users/sophie/Dev/netcoreApp/obj/Debug/netcoreapp3.0/netcoreApp.csprojAssemblyReference.cache
+/Users/sophie/Dev/netcoreApp/obj/Debug/netcoreapp3.0/netcoreApp.AssemblyInfoInputs.cache
+/Users/sophie/Dev/netcoreApp/obj/Debug/netcoreapp3.0/netcoreApp.AssemblyInfo.cs
+/Users/sophie/Dev/netcoreApp/obj/Debug/netcoreapp3.0/netcoreApp.dll
+/Users/sophie/Dev/netcoreApp/obj/Debug/netcoreapp3.0/netcoreApp.pdb

@@ -1,0 +1,21 @@
+version: 2.1
+executors:
+  docker_netcore:
+    docker:
+      - image: microsoft/dotnet:3.0-sdk
+jobs:
+  run_build:
+    executor: docker_netcore
+    steps:
+      - run:
+          name: check dotnet version
+          command: dotnet version
+      - run:
+          name: run dotnet sample app
+          command: dotnet run
+
+workflows:
+  version: 2
+  test_dotent:
+    jobs:
+      - run_build
