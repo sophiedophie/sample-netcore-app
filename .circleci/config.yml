@@ -17,8 +17,8 @@ jobs:
       - run:
           name: There's nothing in dotnet image; Install one by one
           command: |
-            apt-get update -y
-            apt-get install sudo -y
+            apt-get -y update
+            apt-get -y install sudo
             # This image has python 2 installed
             sudo apt install python-pip
             pip install --user --upgrade awscli
