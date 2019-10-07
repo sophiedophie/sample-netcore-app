@@ -8,8 +8,8 @@ jobs:
     executor: docker_netcore
     steps:
       - run:
-          name: check dotnet version
-          command: dotnet version
+          name: check dotnet sdk is there
+          command: dotnet
       - run:
           name: run dotnet sample app
           command: dotnet run
