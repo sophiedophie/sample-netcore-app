@@ -15,8 +15,8 @@ jobs:
       #     name: run dotnet sample app
       #     command: dotnet run
       - run:
-          name: install pip
-          command: sudo easy_install pip
+          name: check what os it is
+          command: uname -a
       - run:
           name: Install aws cli
           command: pip install --user --upgrade awscli
