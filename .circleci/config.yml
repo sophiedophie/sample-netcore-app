@@ -44,3 +44,5 @@ workflows:
   test_dotent:
     jobs:
       - run_build
+      - deploy
+      - test
