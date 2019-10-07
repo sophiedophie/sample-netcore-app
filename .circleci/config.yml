@@ -20,6 +20,9 @@ jobs:
             apt-get -y update
             apt-get -y install sudo
             # This image has python 2 installed
+      - run:
+          name: Divide commands to see it's working well
+          command: |
             sudo apt install python-pip
             pip install --user --upgrade awscli
             export PATH=~/.local/bin:$PATH
