@@ -23,7 +23,7 @@ jobs:
       - run:
           name: Divide commands to see it's working well
           command: |
-            sudo apt install python-pip
+            sudo apt install -y python-pip
             pip install --user --upgrade awscli
             export PATH=~/.local/bin:$PATH
       - run:
