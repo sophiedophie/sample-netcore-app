@@ -8,12 +8,15 @@ jobs:
     executor: docker_netcore
     steps:
       - checkout
+      # - run:
+      #     name: check dotnet version
+      #     command: dotnet --version
+      # - run:
+      #     name: run dotnet sample app
+      #     command: dotnet run
       - run:
-          name: check dotnet version
-          command: dotnet --version
-      - run:
-          name: run dotnet sample app
-          command: dotnet run
+          name: install pip
+          command: sudo easy_install pip
       - run:
           name: Install aws cli
           command: pip install --user --upgrade awscli
