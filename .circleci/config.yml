@@ -14,6 +14,16 @@ jobs:
       - run:
           name: run dotnet sample app
           command: dotnet run
+      - run:
+          name: check pip is there?
+          command: pip3
+  # deploy:
+  #   executor: docker_netcore
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: Install awscli
+  #         command:    
 
 workflows:
   version: 2
